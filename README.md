@@ -1,0 +1,2 @@
+# design_pattern_lesson
+自社向けデザインパターンの講座
