@@ -92,8 +92,9 @@ _footer: ""
 _footer: "" 
 -->
 
-![bg width:1000px height:500px](img/OSI_reference_model.jpg)
-
+![width:1000px height:500px](img/OSI_reference_model.jpg)
+* 役割ごとに階層が分かれている
+* 下の層がハードウェアに近い
 
 ---
 <!--
@@ -107,7 +108,9 @@ _footer: ""
 _footer: "" 
 -->
 
-![bg width:1000px height:500px](img/OSI_reference_model_tcp_2.jpg)
+![width:1000px height:500px](img/OSI_reference_model_tcp_2.jpg)
+* 上の階層ほど抽象的。目的・知識・Why。
+* 下の階層ほど具体的。目的を達成する手段・How。
 
 # Adapter
 <!--
