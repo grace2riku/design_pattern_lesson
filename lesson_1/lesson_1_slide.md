@@ -122,6 +122,29 @@ _footer: ""
 提供されているもの -> 交流100V
 ACアダプタが変換するもの -> 交流を直流に変換。交流100Vをパソコンが動作する12Vに変換する
 
+---
+<!--
+_footer: "" 
+-->
+▪️例）Apple ACアダプタ
+
+AppleのACアダプタの構造
+![width:600 height:400px](img/apple_acアダプタ_全体.png)
+
+![bg right width:500 height:500px](img/apple_acアダプタ_取り外し.png)
+
+---
+<!--
+_footer: "" 
+-->
+アダプタのプラグ部分は取り外し可能で海外でも使えるように考慮されている（設計した）と予想できる。
+調べてみたら[Apple ワールドトラベルアダプタキット](https://support.apple.com/ja-jp/HT202114)なる製品があり、7種類のプラグ形状があることがわかった。
+プラグ部分を容易に変更できる構造になっている。
+
+![bg right width:400 height:380px](img/Appleワールドトラベルアダプタキット.png)
+
+**このように容易に変更できる構造をソフトウェアにも持ち込みたい!!!**
+
 # Factory Method
 <!--
 _footer: "" 
