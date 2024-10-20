@@ -45,6 +45,17 @@ _footer: ""
 - LAPRASポートフォリオ: https://lapras.com/public/k-abe
 - Twitter: @juraruming
 
+---
+<!--
+_footer: "" 
+-->
+講座のGitHubリポジトリ
+https://github.com/grace2riku/design_pattern_lesson
+
+今回の講座のディレクトリ
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1
+
+
 # 良い設計とはどういう設計か?
 <!--
 _footer: "" 
@@ -162,6 +173,74 @@ Adapterパターンのサンプルプログラム例
 | 提供されているもの | 交流100ボルト | Calcクラス | 
 | 変換装置 | アダプター | LimitCalcクラス |
 | 必要なもの | 直流12ボルト | Limiterクラス |
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムのクラス図
+
+![bg right width:600 height:500px](img/adapter_LimitCalc.png)
+
+サンプルプログラムのディレクトリ
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/adapter/LimitCalc
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムのビルド方法
+サンプルプログラムのディレクトリに移動しつぎのコマンドでビルドする。
+
+```
+$ javac Main.java 
+```
+
+プログラムの実行はつぎのコマンドで行う。
+```
+$ java Main 
+```
+
+---
+<!--
+_footer: "" 
+-->
+Adapterサンプルプログラムの実行結果
+
+```
+$ java Main
+/***** Calc *****/
+ret_val(0 + 101) = 101
+ret_val(0 + (-1)) = -1
+
+/***** LimitCalc *****/
+limit min value = 0/limit max value = 100
+ret_val(0 + 50) = 50
+ret_val(0 + 100) = 100
+ret_val(0 + 101) = 100
+ret_val(0 + 0) = 0
+ret_val(0 + (-1)) = 0
+```
+
+* Calcはリミットなしの加算。LimitCalcはリミットありの加算
+* LimintCalcの下限は0、上限は100に設定
+
+---
+<!--
+_footer: "" 
+-->
+Adapterパターンの登場人物を抽象的に書く
+
+![bg right width:700 height:500px](img/adapter.png)
+
+---
+<!--
+_footer: "" 
+-->
+Adapterパターンの使いところ
+
+* 既にあるクラスを変更せずに再利用できる
+* 変動部（Target）をバリエーション化すれば素早く多くのバリエーションに対応できる（競合他社との差別化）
 
 
 
