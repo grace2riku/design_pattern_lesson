@@ -15,8 +15,6 @@ public class LimitCalc extends Limiter {
 	public int add(int val, int val_2) {
 		int ret_val = this.calc.add(val, val_2);
 
-		System.out.println("calc ret_val = " + ret_val);
-
 		if (ret_val > max) ret_val = max;
 		if (ret_val < min) ret_val = min;
 
