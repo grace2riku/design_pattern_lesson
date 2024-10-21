@@ -329,8 +329,27 @@ _footer: ""
 -->
 Factory_Methodパターンの使いところ
 
-* 
-* 
+* インスタンス生成を専門にするクラスを用意することでコードを整理できる
+工場に使えばインスタンスを作成できる。
+
+---
+<!--
+_footer: "" 
+-->
+static Factory Method
+> 参考資料1より引用
+
+* インスタンス生成のためのクラスメソッド（クラスをインスタンス化しなくても呼び出し可能なメソッド）
+
+* GoFのFactory Methodパターン違うが、インスタンス生成でよく使われる手法。
+（個人的に開発シーンでFactoryと呼ぶときはこちらを指すことが多いと思っている）
+
+* javaのAPIのstatic Factory Methodとして参考資料1で紹介されているものは以下のとおり
+  * java.security.SecureRandomのgetInstanceメソッド
+  * java.util.Listのofメソッド 
+  * java.util.ArraysのasListメソッド 
+  * java.lang.StringのvalueOfメソッド 
+  * java.time.Instantのnowメソッド 
 
 
 # Singleton
