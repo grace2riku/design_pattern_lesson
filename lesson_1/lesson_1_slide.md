@@ -366,8 +366,8 @@ static Factory Method
 _footer: "" 
 -->
 1. [Java言語で学ぶデザインパターン入門　第3版](https://www.hyuki.com/dp/)
-2. 
-3. 
+2. [直撃！デザインパターン](https://refactoring.guru/ja/design-patterns/book)
+3. [ぼくにもわかるデザインパターン　第2章 GoFパターン大カタログ ～パターンがみるみる頭にしみこむ～](https://www.ulsystems.co.jp/archives/028.html)
 
 
 ---
