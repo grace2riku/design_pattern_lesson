@@ -243,13 +243,95 @@ Adapterパターンの使いところ
 * 変動部（Target）をバリエーション化すれば素早く多くのバリエーションに対応できる（競合他社との差別化）
 
 
-
 # Factory Method
 <!--
 _footer: "" 
 -->
 * 参考資料1　章題　【インスタンス作成をサブクラスにまかせる】
 * インスタンス作成するクラスを用意する（あちこちでインスタン作成せずに、インスタンス作成役に任せる）。
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムのクラス図
+
+![bg right width:630 height:500px](img/Factory%20Methodサンプルプログラム.png)
+
+サンプルプログラムのディレクトリ
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Factory_Method
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムのビルド方法
+サンプルプログラムのディレクトリに移動しつぎのコマンドでビルドする。
+
+```
+$ javac Main.java 
+```
+
+プログラムの実行はつぎのコマンドで行う。
+```
+$ java Main 
+```
+
+---
+<!--
+_footer: "" 
+-->
+Adapterサンプルプログラムの実行結果
+
+```
+$ java Main
+/***** IDCardのFactory *****/
+Hiroshi Yukiのカードを作ります。
+IDCard [owner=Hiroshi Yuki]を登録しました。
+Tomuraのカードを作ります。
+IDCard [owner=Tomura]を登録しました。
+Hanako Satoのカードを作ります。
+IDCard [owner=Hanako Sato]を登録しました。
+IDCard [owner=Hiroshi Yuki]を使います。
+IDCard [owner=Tomura]を使います。
+IDCard [owner=Hanako Sato]を使います。
+
+/***** BussinesCardのFactory *****/
+Koji Abeの名刺を作ります。
+BusinessCard [owner=Koji Abe]を登録しました。
+Riku Abeの名刺を作ります。
+BusinessCard [owner=Riku Abe]を登録しました。
+BusinessCard [owner=Koji Abe]を使います。
+BusinessCard [owner=Riku Abe]を使います。
+```
+
+---
+<!--
+_footer: "" 
+-->
+Adapterサンプルプログラムの実行結果
+
+* IDCardのFactoryは参考資料1のサンプルコード
+* BussinesCardのFactoryは今回追加した名刺のFactoryと商品の名刺
+* フレームワークのパッケージ内は変更せず、具体的な工場・商品の追加で新しい種類のインスタンス作成ができた
+
+---
+<!--
+_footer: "" 
+-->
+Factory_Methodパターンの登場人物を抽象的に書く
+
+![bg right width:680 height:500px](img/Factory%20Method.png)
+
+---
+<!--
+_footer: "" 
+-->
+Factory_Methodパターンの使いところ
+
+* 
+* 
+
 
 # Singleton
 
