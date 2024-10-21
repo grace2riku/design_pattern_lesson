@@ -344,6 +344,12 @@ static Factory Method
 * GoFのFactory Methodパターン違うが、インスタンス生成でよく使われる手法。
 （個人的に開発シーンでFactoryと呼ぶときはこちらを指すことが多いと思っている）
 
+---
+<!--
+_footer: "" 
+-->
+static Factory Method
+
 * javaのAPIのstatic Factory Methodとして参考資料1で紹介されているものは以下のとおり
   * java.security.SecureRandomのgetInstanceメソッド
   * java.util.Listのofメソッド 
