@@ -44,7 +44,7 @@ _footer: ""
 - 医療機器の組込みソフトウェア開発。C言語。
 - 趣味: 宇宙開発（[リーマンサットプロジェクト](https://www.rymansat.com/)広報メンバー）
 - LAPRASポートフォリオ: https://lapras.com/public/k-abe
-- Twitter: @juraruming
+- Twitter: [@juraruming](https://x.com/juraruming)
 
 # 開発環境構築
 <!--
