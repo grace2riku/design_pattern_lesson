@@ -50,7 +50,7 @@ _footer: ""
 <!--
 _footer: "" 
 -->
-サンプルコードのコンパイル、実行にjava（JDK）のインストールが必要です。下記のページなどを参照し、ご自分のPC環境に合わせてインストールしてください。
+サンプルコードのコンパイル、実行にjava（JDK）のインストールが必要です。下記のページなどを参照し、ご自分のPCのOSに合わせてインストールしてください。
 
 [【2024年版】Java JDKのインストール方法（Windows & Mac対応）](https://codeforfun.jp/how-to-install-java-jdk-on-windows-and-mac/)
 
