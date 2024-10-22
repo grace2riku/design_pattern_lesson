@@ -382,6 +382,53 @@ _footer: ""
 -->
 Singletonパターンのサンプルプログラム例
 
+テーマ：システムに1つのものを対象にする。今回はプリンタのジョブ
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムのクラス図
+
+![bg right width:600 height:500px](img/Singleton_PrintJob.png)
+
+サンプルプログラムのディレクトリ
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Singleton/PrintJob
+
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムのビルド方法
+サンプルプログラムのディレクトリに移動しつぎのコマンドでビルドする。
+
+```
+$ javac Main.java 
+```
+
+プログラムの実行はつぎのコマンドで行う。
+```
+$ java Main 
+```
+
+---
+<!--
+_footer: "" 
+-->
+Singletonサンプルプログラムの実行結果
+
+```
+$ java Main
+Start.
+インスタンスを生成しました。
+printjob1とprintjob2は同じインスタンスです。
+End.
+```
+
+* 「インスタンスを生成しました。」のメッセージが1つなので、インスタンスは1つのみ生成されている。
+* getInstanceメソッドで取得したインスタンスは同じことを確認できた
+
 
 # 参考資料
 <!--
