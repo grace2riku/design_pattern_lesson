@@ -24,6 +24,7 @@ footer: ""
 
 # 目次
 - 自己紹介
+- 開発環境構築
 - 良い設計とはどういう設計か?
 - Adapter
 - Factory Method
@@ -44,6 +45,21 @@ _footer: ""
 - 趣味: 宇宙開発（[リーマンサットプロジェクト](https://www.rymansat.com/)広報メンバー）
 - LAPRASポートフォリオ: https://lapras.com/public/k-abe
 - Twitter: @juraruming
+
+# 開発環境構築
+<!--
+_footer: "" 
+-->
+サンプルコードのコンパイル、実行にjava（JDK）のインストールが必要です。下記のページなどを参照し、ご自分のPC環境に合わせてインストールしてください。
+
+[【2024年版】Java JDKのインストール方法（Windows & Mac対応）](https://codeforfun.jp/how-to-install-java-jdk-on-windows-and-mac/)
+
+つぎのコマンド実行でバージョンが表示されていればOKです。
+私はつぎのバージョンで確認しました。
+```
+$ javac -version
+javac 17.0.8
+```
 
 ---
 <!--
