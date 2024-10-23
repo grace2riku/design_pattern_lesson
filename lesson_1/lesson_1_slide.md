@@ -65,6 +65,22 @@ javac 17.0.8
 <!--
 _footer: "" 
 -->
+サンプルプログラムのビルド方法
+サンプルプログラムのディレクトリ（Main.javaがあるディレクトリ）に移動しつぎのコマンドでビルドする。
+
+```
+$ javac Main.java 
+```
+
+プログラムの実行はつぎのコマンドで行う。
+```
+$ java Main 
+```
+
+---
+<!--
+_footer: "" 
+-->
 講座のGitHubリポジトリ
 https://github.com/grace2riku/design_pattern_lesson
 
@@ -207,7 +223,7 @@ https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/adapter/L
 _footer: "" 
 -->
 サンプルプログラムのビルド方法
-サンプルプログラムのディレクトリに移動しつぎのコマンドでビルドする。
+サンプルプログラムのディレクトリ（Main.javaがあるディレクトリ）に移動しつぎのコマンドでビルドする。
 
 ```
 $ javac Main.java 
@@ -283,7 +299,7 @@ https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Factory_M
 _footer: "" 
 -->
 サンプルプログラムのビルド方法
-サンプルプログラムのディレクトリに移動しつぎのコマンドでビルドする。
+サンプルプログラムのディレクトリ（Main.javaがあるディレクトリ）に移動しつぎのコマンドでビルドする。
 
 ```
 $ javac Main.java 
@@ -418,7 +434,7 @@ https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Singleton
 _footer: "" 
 -->
 サンプルプログラムのビルド方法
-サンプルプログラムのディレクトリに移動しつぎのコマンドでビルドする。
+サンプルプログラムのディレクトリ（Main.javaがあるディレクトリ）に移動しつぎのコマンドでビルドする。
 
 ```
 $ javac Main.java 
