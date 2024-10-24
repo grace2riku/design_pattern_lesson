@@ -82,12 +82,14 @@ $ java Main
 <!--
 _footer: "" 
 -->
-講座のGitHubリポジトリ
+* 講座のGitHubリポジトリ
 https://github.com/grace2riku/design_pattern_lesson
 
-今回の講座のディレクトリ
+* 今回の講座のディレクトリ
 https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1
 
+* 参考資料1　ソースコードのダウンロード先
+[Java言語で学ぶデザインパターン入門　第3版](https://www.hyuki.com/dp/)
 
 # 良い設計とはどういう設計か?
 <!--
