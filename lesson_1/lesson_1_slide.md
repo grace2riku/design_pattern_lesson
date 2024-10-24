@@ -569,7 +569,92 @@ Singletonパターンの使いところ
 * インスタンスが1つであることを保証したい時
   * 組込みソフトウェアのデバイスドライバなど。
   * データベースのアクセス
-  * Factory MethodのFactory
+  * Factory MethodのFactory（インスタンスを作成する工場はひとつでよいことが多いと思う）
+
+---
+<!--
+_footer: "" 
+-->
+おまけ：Singletonの実装を変更してみる
+
+サンプルコード：
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Singleton/PrintJob_2_1
+
+---
+<!--
+_footer: "" 
+-->
+ディレクトリ名：PrintJob_2_1
+Singletonのインスタンス生成の実装を下記に変更（インスタンスが生成済みかnullチェックするようにした）
+```
+public class PrintJob {
+    private static PrintJob printJob = null;
+    
+    private PrintJob() {
+        System.out.println("インスタンスを生成しました。");
+    }
+
+    public static PrintJob getInstance() {
+        if (printJob == null) {
+            printJob = new PrintJob();
+        }
+        return printJob;
+    }
+}
+```
+
+---
+<!--
+_footer: "" 
+-->
+サンプルコード：PrintJob_2_1を動かすとSingletonの動きが確認できます。
+
+・・・確認できますが、このコードには
+* 考慮していないこと
+* 呼び出し方にはよっては意図しない動作をする可能性
+があります。
+
+それは何でしょう？
+
+つぎのページを見ずに考えてみてくださいね🙇
+
+---
+<!--
+_footer: "" 
+-->
+前ページの解答
+
+* マルチスレッド環境でgetInstanceを実行すると異なるインスタンスを取得してしまう（Singletonでなくなる）
+
+---
+<!--
+_footer: "" 
+-->
+PrintJob_2_1をマルチスレッドで実行するように変更したコード（PrintJob_2_2）で動きを確かめてみる
+
+サンプルコード：
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Singleton/PrintJob_2_2
+
+
+---
+<!--
+_footer: "" 
+-->
+PrintJob_2_2をコンパイル・実行するとつぎの結果になる。
+
+```
+Start
+End
+インスタンスを生成しました。
+インスタンスを生成しました。
+インスタンスを生成しました。
+PrintJob B: obj = PrintJob@1151bbe3
+PrintJob C: obj = PrintJob@7b63961c
+PrintJob A: obj = PrintJob@4230a45b
+```
+
+* 3つインスタンスをつくっており、異なるインスタンスになっている。
+※PC環境によっては結果が異なるかもしれません。私のPCだと毎回異なるインスタンスになりました。
 
 
 # 参考資料
