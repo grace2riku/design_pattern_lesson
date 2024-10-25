@@ -657,6 +657,88 @@ PrintJob A: obj = PrintJob@4230a45b
 ※PC環境によっては結果が異なるかもしれません。私のPCだと毎回異なるインスタンスになりました。
 
 
+---
+<!--
+_footer: "" 
+-->
+何故、Singletonでなくなったのでしょうか?
+
+---
+<!--
+_footer: "" 
+-->
+Q. 何故、Singletonでなくなったのでしょうか?
+A. このメソッドの条件判断がマルチスレッドで実行されるため
+
+```
+    public static PrintJob getInstance() {
+        if (printJob == null) {
+            printJob = new PrintJob();
+        }
+        return printJob;
+    }
+```
+
+---
+<!--
+_footer: "" 
+-->
+PrintJob_2_2のコードでSingletonに対応する方法
+
+インスタンス作成部分をマルチスレッド環境から呼び出されても唯一のインスタンスを返すようにする。
+
+参考資料1に書かれていた手法を紹介する。
+
+コード
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Singleton/PrintJob_2_3
+
+
+---
+<!--
+_footer: "" 
+-->
+synchronizedを付加する
+
+```
+    public static synchronized PrintJob getInstance() {
+        if (printJob == null) {
+            printJob = new PrintJob();
+        }
+        return printJob;
+    }
+```
+
+---
+<!--
+_footer: "" 
+-->
+PrintJob_2_3（synchronized）の実行結果
+
+```
+$ java Main
+Start
+End
+インスタンスを生成しました。
+PrintJob B: obj = PrintJob@386514c2
+PrintJob A: obj = PrintJob@386514c2
+PrintJob C: obj = PrintJob@386514c2
+```
+
+* インスタンスが1個だけ作成されており、Singleton対応できていることが確認できた。
+* PrintJob_2_1のコードが基本形だと思う。
+PrintJob_2_1のコードをマルチスレッド環境で実行してもSingleton対応できている。
+
+---
+<!--
+_footer: "" 
+-->
+このことから学べるポイント
+
+* どう使われるか?、どう使われる可能性があるか?、を考慮して実装者に任せるのではなく**設計者**が実装者に伝えるようにする。
+
+* スレッドセーフではない実装のまま進める場合は、ドキュメントにスレッドセーフではない旨を書いておいた方が良さそう。
+
+
 # 参考資料
 <!--
 _footer: "" 
