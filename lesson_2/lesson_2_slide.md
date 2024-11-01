@@ -300,9 +300,25 @@ _footer: ""
 $ javac Main.java 
 ```
 
-プログラムの実行はつぎのコマンドで行う。
+プログラム実行時は引数で作成する文書を指定する（Main.javaを参照）。
+
+---
+<!--
+_footer: "" 
+-->
+テキストの場合
 ```
-$ java Main 
+$ java Main text
+```
+
+HTMLの場合
+```
+$ java Main html
+```
+
+マークダウンの場合
+```
+$ java Main md
 ```
 
 ---
