@@ -325,11 +325,52 @@ $ java Main md
 <!--
 _footer: "" 
 -->
-サンプルプログラムの実行結果
+サンプルプログラムの実行結果（テキストの場合）
+```
+$ java Main text
+==============================
+『Greeting』
 
+■一般的なあいさつ
+
+　・How are you?
+　・Hello.
+　・Hi.
+
+■時間帯に応じたあいさつ
+
+　・Good morning.
+　・Good afternoon.
+　・Good evening.
+
+==============================
 ```
-$ java Main
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムの実行結果（HTMLの場合）
 ```
+$ java Main html
+HTMLファイルGreeting.htmlが作成されました。
+```
+
+HTMLファイルが作成される。
+![bg right width:600 height:500px](img/Greeting_html.jpg)
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムの実行結果（マークダウンの場合）
+```
+$ java Main md
+MarkdownファイルGreeting.mdが作成されました。
+```
+
+マークダウンファイルが作成される。
+![bg right width:650 height:500px](img/Greeting_md.jpg)
 
 ---
 <!--
