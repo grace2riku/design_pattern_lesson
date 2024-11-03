@@ -293,6 +293,41 @@ https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_2/Builder
 <!--
 _footer: "" 
 -->
+サンプルプログラムの解説
+* Builderクラスは文章を構成するメソッドを定義する。
+具体的な処理はサブクラスに書かれている。文章の種類の違いはサブクラスの中で表現されている。
+* Directorクラスのconstructメソッドで文章を作成する。
+
+
+---
+<!--
+_footer: "" 
+-->
+Directorクラスのconstructメソッドは文章の種類に関わらず同じ処理で文章を作成している。
+```java:Director.java
+    public void construct() {
+        builder.makeTitle("Greeting");
+        builder.makeString("一般的なあいさつ");
+        builder.makeItems(new String[]{
+            "How are you?",
+            "Hello.",
+            "Hi.",
+        });
+        builder.makeString("時間帯に応じたあいさつ");
+        builder.makeItems(new String[]{
+            "Good morning.",
+            "Good afternoon.",
+            "Good evening.",
+        });
+        builder.close();
+    }
+```
+
+
+---
+<!--
+_footer: "" 
+-->
 サンプルプログラムのビルド方法
 サンプルプログラムのディレクトリ（Main.javaがあるディレクトリ）に移動しつぎのコマンドでビルドする。
 
