@@ -413,7 +413,16 @@ _footer: ""
 -->
 Builderパターンの登場人物を抽象的に書く
 
-![bg right width:700 height:500px](img/adapter.png)
+Builderパターンのクラス図
+![bg right width:700 height:500px](img/Builderパターンのクラス図.png)
+
+---
+<!--
+_footer: "" 
+-->
+Builderパターンのシーケンス図
+![bg right width:700 height:500px](img/Buildパターンのシーケンス図.png)
+
 
 ---
 <!--
