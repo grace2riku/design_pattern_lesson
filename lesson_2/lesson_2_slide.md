@@ -284,7 +284,7 @@ _footer: ""
 -->
 サンプルプログラムのクラス図
 
-![bg right width:650 height:500px](img/Builder.png)
+![bg right width:650 height:500px](img/Builder_sample.png)
 
 サンプルプログラムのディレクトリ
 https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_2/Builder
