@@ -428,7 +428,24 @@ Builderパターンのシーケンス図
 <!--
 _footer: "" 
 -->
-Builderパターンの使いところ
+Builderパターンのまとめ
+
+1. 誰が何を知っているか
+2. 依存性の注入（Dependency Injection ≒ DI）
+
+---
+<!--
+_footer: "" 
+-->
+1. 誰が何を知っているか
+
+
+---
+<!--
+_footer: "" 
+-->
+2. 依存性の注入（Dependency Injection ≒ DI）
+
 
 
 # Strategy
