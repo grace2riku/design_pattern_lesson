@@ -1,7 +1,7 @@
 
-public class FuzzyControlaStrategy implements ControlStrategy {
+public class PidControlStrategy implements ControlStrategy {
 
-    public FuzzyControlaStrategy() {
+    public PidControlStrategy() {
     }
 
     @Override

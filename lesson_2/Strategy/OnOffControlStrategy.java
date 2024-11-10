@@ -1,7 +1,7 @@
 
-public class PidControlaStrategy implements ControlStrategy {
+public class OnOffControlStrategy implements ControlStrategy {
 
-    public PidControlaStrategy() {
+    public OnOffControlStrategy() {
     }
 
     @Override

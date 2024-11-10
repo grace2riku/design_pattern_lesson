@@ -1,7 +1,7 @@
 
-public class OnOffControlaStrategy implements ControlStrategy {
+public class FuzzyControlStrategy implements ControlStrategy {
 
-    public OnOffControlaStrategy() {
+    public FuzzyControlStrategy() {
     }
 
     @Override

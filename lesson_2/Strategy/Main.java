@@ -16,13 +16,13 @@ public class Main {
         Controler controler = null;
         if (args[0].equals("onoff")) {
             System.out.println("OnOff制御を開始します...");
-            controler = new Controler(new OnOffControlaStrategy());
+            controler = new Controler(new OnOffControlStrategy());
         } else if (args[0].equals("pid")) {
             System.out.println("PID制御を開始します...");
-            controler = new Controler(new PidControlaStrategy());
+            controler = new Controler(new PidControlStrategy());
         } else if (args[0].equals("fuzzy")) {
             System.out.println("ファジー制御を開始します...");
-            controler = new Controler(new FuzzyControlaStrategy());
+            controler = new Controler(new FuzzyControlStrategy());
         } else if (args[0].equals("ml")) {
             System.out.println("機械学習制御を開始します...");
             controler = new Controler(new MachineLearningControlStrategy());
