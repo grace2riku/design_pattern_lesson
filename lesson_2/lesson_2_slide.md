@@ -503,6 +503,47 @@ _footer: ""
 <!--
 _footer: "" 
 -->
+サンプルプログラムのテーマ
+[UMTP 組込みモデリング部会](https://umtp-japan.org/activity-report/6846)
+
+組込みモデリングカタログ
+部品編 -> **目標制御** をテーマとする。
+
+モデルの概要
+* 制御対象の測定値が目標値となるように制御する仕組み
+* 目標制御の適用例
+  * エアコンの温度制御
+  * 自動車の速度制御
+  * その他、多種多様多岐に渡る
+
+---
+<!--
+_footer: "" 
+-->
+目標制御のモデル解説
+
+参考資料4. [組込み分野のためのUML モデル解説書 部品編 C001 目標制御](https://umtp-japan.org/pdf/built/C001_TargetControl.pdf) 16ページ
+
+![bg right width:630 height:500px](img/目標制御_静的モデル_クラス構造.jpg)
+
+* 目標制御モデルの全体構造
+
+---
+<!--
+_footer: "" 
+-->
+目標制御の**制御方式**の解説
+
+参考資料4. [組込み分野のためのUML モデル解説書 部品編 C001 目標制御](https://umtp-japan.org/pdf/built/C001_TargetControl.pdf) 21ページ
+
+![bg right width:630 height:500px](img/目標制御_制御方式.jpg)
+
+* サンプルプログラムでは制御方式の各制御をStrategyパターンで表現する
+
+---
+<!--
+_footer: "" 
+-->
 サンプルプログラムのクラス図
 
 ![bg right width:630 height:500px](img/Strategyサンプルプログラムのクラス図.png)
@@ -625,7 +666,7 @@ _footer: ""
 1. [Java言語で学ぶデザインパターン入門　第3版](https://www.hyuki.com/dp/)
 2. [直撃！デザインパターン](https://refactoring.guru/ja/design-patterns/book)
 3. [ぼくにもわかるデザインパターン　第2章 GoFパターン大カタログ ～パターンがみるみる頭にしみこむ～](https://www.ulsystems.co.jp/archives/028.html)
-
+4. [組込み分野のためのUML モデル解説書 部品編 C001 目標制御](https://umtp-japan.org/pdf/built/C001_TargetControl.pdf)
 
 ---
 
