@@ -508,7 +508,7 @@ _footer: ""
 ![bg right width:630 height:500px](img/Strategyサンプルプログラムのクラス図.png)
 
 サンプルプログラムのディレクトリ
-https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Factory_Method
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_2/Strategy
 
 ---
 <!--
