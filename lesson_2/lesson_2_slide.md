@@ -555,6 +555,16 @@ https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_2/Strategy
 <!--
 _footer: "" 
 -->
+各制御方式の詳細
+> 参考資料4. [組込み分野のためのUML モデル解説書 部品編 C001 目標制御](https://umtp-japan.org/pdf/built/C001_TargetControl.pdf) 34ページより引用
+
+![bg right width:630 height:500px](img/各制御方式の詳細.jpg)
+
+
+---
+<!--
+_footer: "" 
+-->
 
 Strategyパターンとビジネス活動の連携の例
 
