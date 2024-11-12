@@ -662,7 +662,7 @@ _footer: ""
 -->
 Strategyパターンの登場人物を抽象的に書く
 
-![bg right width:680 height:500px](img/Factory%20Method.png)
+![bg right width:680 height:500px](img/Strategyパターン.png)
 
 ---
 <!--
