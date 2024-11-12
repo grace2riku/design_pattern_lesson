@@ -620,16 +620,41 @@ _footer: ""
 -->
 サンプルプログラムの実行結果
 
+ON・OFF制御の実行結果
 ```
-$ java Main
+$ java Main onoff
+OnOff制御を開始します...
+OnOffControlStrategy init
+OnOffControlStrategy CalcOperationAmount
 ```
 
+PID制御の実行結果
+```
+$ java Main pid
+PID制御を開始します...
+PidControlStrategy init
+PidControlStrategy CalcOperationAmount
+```
 ---
 <!--
 _footer: "" 
 -->
-サンプルプログラムの実行結果
 
+ファジー制御の実行結果
+```
+$ java Main fuzzy
+ファジー制御を開始します...
+FuzzyControlStrategy init
+FuzzyControlStrategy CalcOperationAmount
+```
+
+機械学習制御の実行結果
+```
+$ java Main ml
+機械学習制御を開始します...
+MachineLearningControlStrategy init
+MachineLearningControlStrategy CalcOperationAmount
+```
 
 ---
 <!--
