@@ -544,6 +544,35 @@ _footer: ""
 <!--
 _footer: "" 
 -->
+今回実装したのは図の赤枠のメソッド
+* 開始する（start）、初期化（init）
+* StrategyパターンでPID制御の部分がON・OFF制御、ファジー制御、機械学習制御のバリエーションになる
+
+![bg right width:630 height:500px](img/シーケンス図_開始する.jpg)
+
+---
+<!--
+_footer: "" 
+-->
+今回実装したのは図の赤枠のメソッド
+* 実行する（execute）、操作量を算出する（CalcOperationAmount）
+
+![bg right width:650 height:600px](img/シーケンス図_制御中.jpg)
+
+---
+<!--
+_footer: "" 
+-->
+今回実装したのは図の赤枠のメソッド
+* 終了する（exit）
+
+![bg right width:630 height:500px](img/シーケンス図_終了する.jpg)
+
+
+---
+<!--
+_footer: "" 
+-->
 サンプルプログラムのクラス図
 
 ![bg right width:630 height:500px](img/Strategyサンプルプログラムのクラス図.png)
