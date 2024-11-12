@@ -595,10 +595,24 @@ _footer: ""
 $ javac Main.java 
 ```
 
-プログラムの実行はつぎのコマンドで行う。
+プログラムの実行は制御方式の引数を指定する（つぎはON・OFF制御の場合）。
 ```
-$ java Main 
+$ java Main onoff
 ```
+
+---
+<!--
+_footer: "" 
+-->
+制御方式の引数の組合せ
+
+| 制御方式 | 引数 | コマンド |
+| :--- | :--- | :--- |
+| ON・OFF制御 | onoff | java Main onoff |
+| PID制御 | pid | java Main pid |
+| ファジィ制御 | fuzzy | java Main fuzzy |
+| 機械学習制御 | ml | java Main ml |
+
 
 ---
 <!--
