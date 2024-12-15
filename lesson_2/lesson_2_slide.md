@@ -744,6 +744,13 @@ https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_2/Composite
 <!--
 _footer: "" 
 -->
+サンプルプログラムの解説
+
+
+---
+<!--
+_footer: "" 
+-->
 サンプルプログラムのビルド方法
 サンプルプログラムのディレクトリ（Main.javaがあるディレクトリ）に移動しつぎのコマンドでビルドする。
 
