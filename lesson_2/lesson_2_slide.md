@@ -829,6 +829,81 @@ _footer: ""
 -->
 サンプルプログラムの解説
 
+**Entry.java**
+
+表示メソッドは子クラスで実装することにしている。
+```
+    // prefixを前につけて一覧を表示する
+    protected abstract void printList(String prefix);
+```
+
+---
+<!--
+_footer: "" 
+-->
+Directory.java, File.javaでは
+```
+System.out.println(prefix + "/" + this)
+```
+のようにクラスのオブジェクトと文字列を加算している。これはtoString()を実行すること同じになる。
+
+```
+    // 文字列表現
+    @Override
+    public String toString() {
+        return getName() + " (" + getSize() + ")";
+    }
+```
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムの解説
+**Directory.java**
+
+addメソッドでディレクトリの中にディレクトリまたはファイルを入れる。
+追加するもの（引数のentry）はEntry型になっていることがポイント。
+ディレクトリ・ファイルをEntryとして追加している。
+```
+    // ディレクトリエントリをディレクトリに追加する
+    public Entry add(Entry entry) {
+        directory.add(entry);
+        return this;
+    }
+```
+
+---
+<!--
+_footer: "" 
+-->
+サイズ取得のメソッド。再帰的にgetSizeを呼び出す。結果的にディレクトリに存在するファイルの合計サイズが取得できる。
+
+```
+    @Override
+    public int getSize() {
+        int size = 0;
+        for (Entry entry: directory) {
+            size += entry.getSize();
+        }
+        return size;
+    }
+```
+
+---
+<!--
+_footer: "" 
+-->
+プリントのメソッド。getSize()と同様に再帰的にprintListを呼び出す。結果的にディレクトリ、ファイルをツリー状に表示する。
+```
+    @Override
+    protected void printList(String prefix) {
+        System.out.println(prefix + "/" + this);
+        for (Entry entry: directory) {
+            entry.printList(prefix + "/" + name);
+        }        
+    }
+```
 
 ---
 <!--
