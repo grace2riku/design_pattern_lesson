@@ -912,6 +912,8 @@ _footer: ""
 サンプルプログラムの解説
 **Main.java**
 
+![bg right width:630 height:500px](img/composite_samplecode_tree.png)
+
 1. ディレクトリ作成
 2. rootディレクトリにディレクトリ追加
 
@@ -946,6 +948,38 @@ _footer: ""
 Compositeパターンの使いところ
 
 * ファイルとディレクトリのような再帰的な構造を持つ物を扱いたい時
+
+---
+<!--
+_footer: "" 
+-->
+ディレクトリ・ファイル以外のCompositeパターン適用例
+
+参考資料1に記載のプログラムの動作テストの例
+
+> * KeyboardTestではキーボードからの入力テストを行う。
+> * FileTestではファイルからの入力テストを行う。
+> * NetworkTestではネットワークからの入力テストを行う。
+> * KeyboardTest, FileTest, NetworkTestをまとめて扱い、InputTestという入力テストにする
+> * 複数の出力テストをまとめたOutputTestも作れそう。
+> * InputTestとOutputTestを合わせてInputOutputTestという入出力テストもつくれそう。
+
+---
+<!--
+_footer: "" 
+-->
+動作テストのオブジェクト図
+
+![bg right width:630 height:500px](img/テストのオブジェクト図.png)
+
+---
+<!--
+_footer: "" 
+-->
+動作テストのクラス図
+
+![bg right width:630 height:500px](img/テストのクラス図.png)
+
 
 
 # 参考資料
