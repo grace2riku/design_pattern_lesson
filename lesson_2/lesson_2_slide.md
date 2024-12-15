@@ -731,10 +731,10 @@ _footer: ""
 -->
 サンプルプログラムのクラス図
 
-![bg right width:600 height:500px](img/Singleton_PrintJob.png)
+![bg right width:630 height:500px](img/Compositeサンプルプログラムのクラス図.png)
 
 サンプルプログラムのディレクトリ
-https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Singleton/PrintJob
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_2/Composite
 
 
 ---
