@@ -909,6 +909,40 @@ _footer: ""
 <!--
 _footer: "" 
 -->
+サンプルプログラムの解説
+**Main.java**
+
+1. ディレクトリ作成
+2. rootディレクトリにディレクトリ追加
+
+```
+        Directory rootdir = new Directory("root");  // 1
+        Directory bindir = new Directory("bin");    // 1
+        Directory tmpdir = new Directory("tmp");    // 1
+        Directory usrdir = new Directory("usr");    // 1
+        rootdir.add(bindir);                        // 2
+        rootdir.add(tmpdir);                        // 2
+        rootdir.add(usrdir);                        // 2
+```
+
+---
+<!--
+_footer: "" 
+-->
+3. ディレクトリにファイル追加
+4. 作成した構成を表示
+
+```
+        bindir.add(new File("vi", 10000));          // 3
+        bindir.add(new File("latex", 20000));       // 3
+        rootdir.printList();                        // 4
+```
+
+
+---
+<!--
+_footer: "" 
+-->
 Compositeパターンの使いところ
 
 
