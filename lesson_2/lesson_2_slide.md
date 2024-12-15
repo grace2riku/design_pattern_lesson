@@ -724,9 +724,12 @@ _footer: ""
 -->
 Compositeパターンのサンプルプログラム例
 
-* ファイルシステム　ディレクトリとファイル
+* ディレクトリとファイルの構造を表示する
 * 容器（ディレクトリ）と中身（ディレクトリまたはファイル）を同じように扱う
 * ディレクトリの中にディレクトリを入れることができる。ディレクトリの中にはファイルを入れることもできる。
+* ファイル作成時はサイズを指定する
+* ディレクトリはディレクトリ配下にあるファイルの合計サイズを表示する
+* ファイルはサイズを表示する
 
 ---
 <!--
@@ -763,6 +766,7 @@ $ javac Main.java
 ```
 
 プログラムの実行はつぎのコマンドで行う。
+
 ```
 $ java Main 
 ```
@@ -771,11 +775,53 @@ $ java Main
 <!--
 _footer: "" 
 -->
-Compositeサンプルプログラムの実行結果
+Compositeサンプルプログラムの実行結果 その1
+rootディレクトリのファイル追加はつぎの表示となる。
 
 ```
 $ java Main
+Making root entries...
+/root (30000)
+/root/bin (30000)
+/root/bin/vi (10000)
+/root/bin/latex (20000)
+/root/tmp (0)
+/root/usr (0)
 ```
+
+---
+<!--
+_footer: "" 
+-->
+Compositeサンプルプログラムの実行結果 その2
+usrディレクトリのファイル追加はつぎの表示となる。
+
+```
+Making user entries...
+/root (31500)
+/root/bin (30000)
+/root/bin/vi (10000)
+/root/bin/latex (20000)
+/root/tmp (0)
+/root/usr (1500)
+/root/usr/yuki (300)
+/root/usr/yuki/diary.html (100)
+/root/usr/yuki/Composite.java (200)
+/root/usr/hanako (300)
+/root/usr/hanako/memo.tex (300)
+/root/usr/tomura (900)
+/root/usr/tomura/game.doc (400)
+/root/usr/tomura/junk.mail (500)
+```
+
+---
+<!--
+_footer: "" 
+-->
+Compositeサンプルプログラムの実行結果 その3
+
+usrディレクトリへのファイル追加でrootディレクトリのサイズが増えていることが確認できる。
+（usrディレクトリはrootディレクトリ配下のディレクトリのため）
 
 ---
 <!--
