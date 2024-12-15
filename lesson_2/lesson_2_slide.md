@@ -732,6 +732,17 @@ Compositeパターンのサンプルプログラム例
 <!--
 _footer: "" 
 -->
+Compositeパターンのサンプルプログラム例
+
+つぎのファイルシステムをつくる（仮想のファイルシステムで実際にディレクトリ、ファイルをつくる訳ではない）。
+
+![bg right width:630 height:500px](img/composite_samplecode_tree.png)
+
+
+---
+<!--
+_footer: "" 
+-->
 サンプルプログラムのクラス図
 
 ![bg right width:630 height:500px](img/Compositeサンプルプログラムのクラス図.png)
