@@ -274,7 +274,7 @@ _footer: ""
 -->
 サンプルプログラムのクラス図
 
-![bg right width:600 height:500px](img/adapter_LimitCalc.png)
+![bg right width:600 height:500px](img/Facade_fig.15-2.png)
 
 サンプルプログラムのディレクトリ
 
