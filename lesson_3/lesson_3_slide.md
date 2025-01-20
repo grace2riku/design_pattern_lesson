@@ -346,7 +346,7 @@ _footer: ""
 -->
 Facadeパターンの登場人物を抽象的に書く
 
-![bg right width:700 height:500px](img/adapter.png)
+![bg right width:700 height:500px](img/Facade.png)
 
 ---
 <!--
