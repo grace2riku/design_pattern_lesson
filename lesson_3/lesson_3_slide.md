@@ -370,10 +370,10 @@ _footer: ""
 -->
 サンプルプログラムのクラス図
 
-![bg right width:630 height:500px](img/Factory%20Methodサンプルプログラム.png)
+![bg right width:630 height:500px](img/Observer_Fig.17-1_サンプルプログラムのクラス図.png)
 
 サンプルプログラムのディレクトリ
-https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Factory_Method
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_3/Observer
 
 ---
 <!--
