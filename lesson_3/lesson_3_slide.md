@@ -311,7 +311,33 @@ _footer: ""
 
 ```
 $ java Main
+welcome.html is created for k-abe@example.com (Koji Abe)
 ```
+
+welcome.htmlの内容
+```html
+<!DOCTYPE html><html><head><title>Koji Abe's web page</title></head>
+<h1>Koji Abe's web page</h1>
+<p>Welcome to Koji Abe's web page!</p>
+<p>Nice to meet you!</p>
+<p><a href="mailto:k-abe@example.com">Koji Abe</a></p>
+</body></html>
+```
+
+---
+<!--
+_footer: "" 
+-->
+welcome.htmlをブラウザで表示したところ
+
+![](img/welcome.html_exec.jpg)
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムの解説
+
 
 ---
 <!--
@@ -325,7 +351,7 @@ Facadeパターンの登場人物を抽象的に書く
 <!--
 _footer: "" 
 -->
-Facadeパターンの使いところ
+Facadeパターンのまとめ
 
 
 # Observer
