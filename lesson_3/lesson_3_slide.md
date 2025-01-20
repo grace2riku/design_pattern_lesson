@@ -380,6 +380,16 @@ ROS2のPublish-Subscriber通信
 <!--
 _footer: "" 
 -->
+サンプルプログラムの例
+テーマ: 数(0〜49のランダムな整数を20個)をObserverに通知する。通知を受けたObserverはそれぞれの方法で数を表示する。
+* Observer 1. DigitObserverは数字で数を表示する
+* Observer 2. GraphObserverはグラフ(*)で数を表示する
+
+
+---
+<!--
+_footer: "" 
+-->
 サンプルプログラムのクラス図
 
 ![bg right width:630 height:500px](img/Observer_Fig.17-1_サンプルプログラムのクラス図.png)
