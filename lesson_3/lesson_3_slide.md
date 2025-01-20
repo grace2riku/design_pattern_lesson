@@ -440,6 +440,8 @@ _footer: ""
 -->
 サンプルプログラムの解説
 
+![width:630 height:500px](img/Observer_Fig.17-1_サンプルプログラムのシーケンス図.png)
+
 
 ---
 <!--
