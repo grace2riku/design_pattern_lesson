@@ -434,15 +434,14 @@ _footer: ""
 <!--
 _footer: "" 
 -->
-Observerパターンの登場人物を抽象的に書く
+サンプルプログラムの解説
 
-![bg right width:680 height:500px](img/Factory%20Method.png)
 
 ---
 <!--
 _footer: "" 
 -->
-Observerパターンの使いところ
+Observerパターンのまとめ
 
 
 # State
