@@ -337,6 +337,7 @@ welcome.htmlをブラウザで表示したところ
 _footer: "" 
 -->
 サンプルプログラムの解説
+![bg width:800 height:500px](img/Facade_sample-code.png)
 
 
 ---
