@@ -363,6 +363,18 @@ Facadeパターンのまとめ
 _footer: "" 
 -->
 * 参考資料1　章題　【状態の変化を通知する】
+* observerは、観察(observe)する人、観察者という意味とのこと
+* 観察対象の状態が変化したことを観察者に通知する。状態変化に応じた処理を記述するときに便利
+* Publish-Subscribeパターン（出版-購読）と呼ばれることもあるらしい。
+
+---
+<!--
+_footer: "" 
+-->
+ROS2のPublish-Subscriber通信
+> https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html
+![](img/Topic-MultiplePublisherandMultipleSubscriber.gif)
+
 
 ---
 <!--
