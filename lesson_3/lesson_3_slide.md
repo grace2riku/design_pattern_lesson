@@ -418,17 +418,21 @@ $ java Main
 _footer: "" 
 -->
 サンプルプログラムの実行結果
+DigitObserverとGraphObserverの表示の組が20個あるが省略
 
 ```
 $ java Main
+DigitObserver:9
+GraphObserver:*********
+DigitObserver:13
+GraphObserver:*************
+DigitObserver:30
+GraphObserver:******************************
+DigitObserver:23
+GraphObserver:***********************
+DigitObserver:34
+GraphObserver:**********************************
 ```
-
----
-<!--
-_footer: "" 
--->
-サンプルプログラムの実行結果
-
 
 ---
 <!--
