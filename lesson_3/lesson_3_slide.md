@@ -449,6 +449,11 @@ _footer: ""
 -->
 Observerパターンのまとめ
 
+* 状態変化を通知するときに使うと便利なパターン
+* 通知を出す側はObserverのことを知らない。RandomNumberGeneratorはObserverがDigitObserverかGraphObserverか知らない。
+* Observerは通知を出す側を知らない。DigitObserver・GraphObserverはRandomNumberGeneratorが通知を出していることを知らない。
+→知らないということはクラスを交換できる→変更容易性を高める設計ができる
+
 
 # State
 <!--
