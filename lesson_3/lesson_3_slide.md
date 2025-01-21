@@ -477,7 +477,7 @@ _footer: ""
 -->
 サンプルプログラムのクラス図
 
-![bg right width:600 height:500px](img/Singleton_PrintJob.png)
+![bg right width:600 height:500px](img/State_Fig.19-3_クラス図.png)
 
 サンプルプログラムのディレクトリ
 https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_3/State
