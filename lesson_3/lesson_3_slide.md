@@ -504,16 +504,62 @@ $ java Main
 _footer: "" 
 -->
 Stateサンプルプログラムの実行結果
+* ターミナルの表示。1秒で1時間経過するようになっている。
 
 ```
 $ java Main
+現在時刻は00:00
+[昼間]から[夜間]へ状態が変化しました。
+現在時刻は01:00
+現在時刻は02:00
+現在時刻は03:00
+現在時刻は04:00
+現在時刻は05:00
+現在時刻は06:00
+java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=金庫使用,when=1737462816012,modifiers=Button1] on button0
+現在時刻は07:00
+java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=非常ベル,when=1737462817221,modifiers=Button1] on button1
+現在時刻は08:00
+java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=通常通話,when=1737462818118,modifiers=Button1] on button2
+現在時刻は09:00
+[夜間]から[昼間]へ状態が変化しました。
+現在時刻は10:00
 ```
 
 ---
 <!--
 _footer: "" 
 -->
-Stateパターンの使いところ
+* GUIの表示。金庫・非常ベル・電話の使用で昼間・夜間の状態に応じたメッセージが表示される。
+
+![width:1000 height:500px](img/State_sample_request.png)
+
+---
+<!--
+_footer: "" 
+-->
+* サンプルプログラムの解説の前にStateパターンを使わない場合（状態をクラスとしない場合）、昼間・夜間で金庫・非常ベル・電話の使用時の振る舞いをどう実装するか考えてみましょう。
+
+---
+<!--
+_footer: "" 
+-->
+* Stateパターンを使わない場合（状態をクラスとしない場合）にありそうな実装例
+
+
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムの解説
+
+
+
+---
+<!--
+_footer: "" 
+-->
+Stateパターンのまとめ
 
 
 
