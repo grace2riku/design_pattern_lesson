@@ -467,7 +467,9 @@ _footer: ""
 _footer: "" 
 -->
 Stateパターンのサンプルプログラム例
+テーマ：参考資料1の金庫警備システム
 
+![width:1000 height:500px](img/State_sample_request.png)
 
 ---
 <!--
@@ -478,7 +480,7 @@ _footer: ""
 ![bg right width:600 height:500px](img/Singleton_PrintJob.png)
 
 サンプルプログラムのディレクトリ
-https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_1/Singleton/PrintJob
+https://github.com/grace2riku/design_pattern_lesson/tree/main/lesson_3/State
 
 
 ---
