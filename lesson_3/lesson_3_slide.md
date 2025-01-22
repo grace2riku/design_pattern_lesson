@@ -609,8 +609,19 @@ _footer: ""
 
 ![bg right width:600 height:500px](img/State_Fig.19-4_シーケンス図.png)
 
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムの解説
 
+DayState, NightStateはSingletonパターンを適用し、インスタンスが1個しか生成できないようにしている。
+プログラムを複雑化させない良いアプローチだと思う。
 
+※Singletonパターンについて1回目の講座資料も参考にしてください。
+【連続講座1】デザインパターンを学び、ソフトウェア設計に生かそう(Adapter・Factory Method・Singleton)
+
+https://www.docswell.com/s/juraruming/5QRMXX-2024-10-25-142836#p41
 
 ---
 <!--
