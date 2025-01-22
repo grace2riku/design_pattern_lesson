@@ -581,6 +581,21 @@ _footer: ""
   // 非常ベル、通常通話使用時のメソッドも同様に状態を追加する
 ```
 
+---
+<!--
+_footer: "" 
+-->
+サンプルプログラムの解説
+
+Stateパターン(DayState, NightState)では前ページの実装と違い、**Stateパターンのクラスの中に**必要な振る舞い
+
+* doClock
+* doUse
+* doAlarm
+* doPhone
+
+が書かれており、状態判断のif文が登場しない。
+Stateパターンは状態の追加に前述の実装例より容易に対応できる。
 
 ---
 <!--
@@ -593,6 +608,8 @@ _footer: ""
 * 時間経過で昼間から夜間になった後に金庫を使用した場合(NightStateのdoUseを呼び出し)
 
 ![bg right width:600 height:500px](img/State_Fig.19-4_シーケンス図.png)
+
+
 
 
 ---
